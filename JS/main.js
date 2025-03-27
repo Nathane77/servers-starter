@@ -2,7 +2,7 @@ const btns = document.querySelectorAll('.gametype')
 const root = document.querySelector(':root')
 
 btns.forEach(btn =>{
-    
+
     btn.addEventListener('mouseover', function(){
         root.style.setProperty("--grad1","#0065a2")
         root.style.setProperty("--grad2", "#004c88")
@@ -21,6 +21,5 @@ btns.forEach(btn =>{
 
     btn.addEventListener('click', function(){
         window.open(btn.id + "start.html")
-        console.log(btn.id + "start.html" )
     })
 })

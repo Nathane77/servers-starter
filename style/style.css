@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+ --grad1: #00d4ff;
+   
+  
+ --grad2: #009bd3;
+    
+  
+  
+ --grad3: #0065a2;
+    
+  
+  
+ --grad4: #00346d;
+    
+  
+  
+ --grad5: #030038;
+}
+
+
+
+  
+html{
+    height: 100%;
+}
+
+body{
+    height:100%;
+    position: relative;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, var(--grad1), var(--grad2), var(--grad3), var(--grad4), var(--grad5));
+    transition: --grade1 2s ease-in-out, --grade2 2s ease-in-out, --grade3 2s ease-in-out, --grade4 2s ease-in-out, --grade5 2s ease-in-out
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #030038;
+    height: 35px;
+}
+
+#gameTypeContainer{
+    display: flex;
+
+    width: fit-content;
+    background-color: transparent;
+}
+
+button{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    transition: filter 0.2s;
+}
+
+button:hover{
+    cursor: pointer;
+    scale: 1.2;
+    filter: brightness(100%);
+}
+
+.buttonHoveredDark{
+    filter: brightness(50%);
+}
+
+.gametype{
+    display: flex;
+    height: 75px;
+    margin: 15px;
+}
